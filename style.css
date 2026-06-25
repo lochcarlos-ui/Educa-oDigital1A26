@@ -1,0 +1,103 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* Artigos */
+article {
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+article div {
+    flex: 1;
+}
+
+article h2 {
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+.artigo-autor {
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.artigo-fonte {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Botões */
+button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e5e7eb;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #d1d5db;
+}
+
+button + button {
+    margin-left: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+    article {
+        flex-direction: column;
+    }
+
+    article img {
+        width: 100%;
+        height: 220px;
+    }
+}
